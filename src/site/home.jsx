@@ -14,7 +14,7 @@ function Home() {
       >
         <div class="container--content">
           <div class="title-page">
-            <h1>This is Home page xxx</h1>
+            <h1>This is Home page</h1>
           </div>
         </div>
       </div>
