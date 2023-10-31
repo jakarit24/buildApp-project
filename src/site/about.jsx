@@ -2,8 +2,8 @@ import React from "react";
 
 function about(){
     return(
-        <div>I am Atomic</div>
+        <div>I am Atomic2</div>
     )
 }
 
-export default about
+export default aboutgit
