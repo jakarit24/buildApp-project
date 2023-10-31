@@ -1,0 +1,45 @@
+/*all-app*/
+/*note
+sm >576; md>768; lg >992; xl >1200;
+*/
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/*sm*/
+@media (min-width: 576px) {
+}
+/*md*/
+@media (min-width: 768px) {
+}
+@media (max-width: 1200px) {
+}
+/*lg*/
+@media (min-width: 992px) {
+}
+/*xl*/
+@media (min-width: 1200px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 520px) {
+}
+
+/*sm*/
+@media (min-width: 576px) {
+}
+/*md*/
+@media (min-width: 768px) {
+}
+@media (max-width: 1200px) {
+}
+/*lg*/
+@media (min-width: 992px) {
+}
+/*xl*/
+@media (min-width: 1200px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 520px) {
+}

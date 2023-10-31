@@ -1,0 +1,224 @@
+/*all-app*/
+body {
+  font-family: Thongterm-Roman;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #5a5a5a;
+}
+a:hover {
+  text-decoration: unset;
+}
+.container--content {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/*zone--header*/
+.zone--header,
+.tab-header {
+  background-color: #000;
+}
+.zone--header .tab-header a {
+  color: #fff;
+  cursor: pointer;
+}
+.zone--header .tab-header a:hover {
+  font-weight: bold;
+}
+
+.tab-meun.tab-btn {
+  height: auto;
+  width: auto;
+  background-color: #fff;
+  box-shadow: 0 1px 6px 0 rgba(90, 90, 90, 0.2);
+}
+.container--tab {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.tab-meun a.btn-navlink,
+.tab-meun a.btn-navlink.nav-active {
+  font-size: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #222;
+  line-height: 32px;
+  height: 72px;
+  display: table-cell;
+  vertical-align: middle;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.tab-meun a.nav-active {
+  font-weight: bold;
+}
+.tab-meun a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: #ffd400;
+}
+.tab-meun a.nav-active:after,
+.btn-nav-title:hover > a.btn-navlink:after {
+  transform: translate3d(100%, 0, 0);
+  transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.tab-meun .App-logo {
+  width: 88px;
+  height: auto;
+}
+/*max-height*/
+.max-height-360px {
+  max-height: 360px;
+}
+.max-height-480px {
+  max-height: 480px;
+}
+.max-height-560px {
+  max-height: 560px;
+}
+.max-height-640px {
+  max-height: 640px;
+}
+.max-height-720px {
+  max-height: 720px;
+}
+/*box-banner*/
+.box-banner .box-banner-image .banner-top.banner {
+  height: 480px;
+  width: auto;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+}
+/*background*/
+.bg-ffffff {
+  background-color: #ffffff;
+}
+.bg-000000 {
+  background-color: #000000;
+}
+.bg-F5F5F5 {
+  background-color: #F5F5F5;
+}
+/*footer*/
+.react-calendar__month-view__weekdays {
+  background-color: #2e86c1;
+}
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+  color: #000000;
+}
+.react-calendar__tile {
+  color: #000000;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+  background-color: #eaecee !important;
+}
+.react-calendar__tile--active {
+  background: #006edc !important;
+  color: white;
+  font-weight: bold;
+}
+
+.datetime {
+  display: flex;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.datetime .datetime-text {
+  margin-right: 8px;
+}
+.datetime .datetime-text:last-child {
+  margin-right: 16px;
+}
+.box-footer1 {
+  display: flex;
+}
+.box-footer1 .box-menu-footer {
+  width: 70%;
+}
+.box-footer2 {
+  display: flex;
+  justify-content: right;
+}
+.box-footer2 .text {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+}
+/*sm*/
+@media (min-width: 576px) {
+}
+/*md*/
+@media (min-width: 768px) {
+}
+@media (max-width: 1200px) {
+}
+/*lg*/
+@media (min-width: 992px) {
+}
+/*xl*/
+@media (min-width: 1200px) {
+}
+@media (max-width: 768px) {
+  .zone--header .tab-header {
+    padding: 0 16px;
+    justify-content: right !important;
+  }
+  /*box-banner*/
+  .box-banner .box-banner-image .banner-top.banner {
+    height: 480px;
+    width: 100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+  }
+  .box-footer1 {
+    display: block;
+  }
+  .box-footer1 .box-menu-footer {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .zone-calendar {
+    background-color: #e5e7e9;
+  }
+  .zone-calendar .box-calendar {
+    position: relative;
+    margin-bottom: 0;
+  }
+  .react-calendar {
+    position: relative;
+    margin: 0 auto;
+  }
+  .box-footer2 {
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 520px) {
+  .react-calendar {
+    width: 100% !important;
+  }
+}
