@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./style_css/App.css";
 import "./style_css/master_style.css";
 import "./style_css/margin_style.css";
 import "./style_css/padding_style.css";
