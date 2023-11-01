@@ -13,13 +13,13 @@ import {
 } from "react-bootstrap/esm/ThemeProvider";
 
 // page
-import Header from "./site/Master/header";
-import Footer from "./site/Master/footer";
+import Header from "./site/A01-Master/header";
+import Footer from "./site/A01-Master/footer";
 
-import Home from "./site/home";
-import About from "./site/about";
-import Contact from "./site/contact";
-import Error from "./site/error";
+import Home from "./site/A01-Home/home";
+import About from "./site/A01-About/about";
+import Contact from "./site/A01-Page-Content/contact";
+import Error from "./site/Error/error";
 
 import { useState } from "react";
 function App() {

@@ -1,6 +1,6 @@
 import React from "react";
 //import { Image } from "react-bootstrap";
-import Slick_Carousel_Top from "./Home/slick-carousel";
+import Slick_Carousel_Top from "./slick-carousel";
 
 /*src={img_banner_top} */
 function Home() {
