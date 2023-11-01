@@ -1,0 +1,32 @@
+[
+	{
+        "userUUID": "000001",
+        "name": "Art",
+        "title": "Title 1",
+        "detail": "Lorem ipsum dolor sit amet, consectur dolori",
+        "description": "Lorem ipsum dolor sit amet, consectur dolori",
+        "phone": "0812345678",
+        "email": "art_04@email.biz",
+        "img_id": "000001",
+        "link": "#",
+        "userid": "000001",
+        "password": "000001",
+        "rolo": "admin"
+	},
+    {
+        "userUUID": "000002",
+        "name": "cat",
+        "title": "Title 1",
+        "detail": "Lorem ipsum dolor sit amet, consectur dolori",
+        "description": "Lorem ipsum dolor sit amet, consectur dolori",
+        "phone": "0812345677",
+        "email": "art_05@email.biz",
+        "img_id": "000002",
+        "link": "#",
+        "userid": "000002",
+        "password": "000002",
+        "rolo": "user"
+        
+   }
+	
+]

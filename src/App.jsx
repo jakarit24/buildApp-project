@@ -20,6 +20,7 @@ import Home from "./site/A01-Home/home";
 import About from "./site/A01-About/about";
 import Contact from "./site/A01-Page-Content/contact";
 import Error from "./site/Error/error";   
+import Login from "./site/A01-User/login";
 import TestApi from "./site/A01-Page-Content/test_api";
 
 import { useState } from "react";
@@ -119,6 +120,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="*" element={<Error />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/testapi" element={<TestApi />}></Route>
       </Routes>
 
