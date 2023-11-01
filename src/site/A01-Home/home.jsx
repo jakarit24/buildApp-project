@@ -4,7 +4,7 @@ import Slick_Carousel_Top from "./slick-carousel";
 
 /*src={img_banner_top} */
 function Home() {
-
+   
 
   return (
     <div class="app--project">
@@ -43,6 +43,8 @@ function Home() {
         <div class="container--content">
           <div class="content--2">
             <h1>content</h1>
+
+
           </div>
         </div>
       </div>

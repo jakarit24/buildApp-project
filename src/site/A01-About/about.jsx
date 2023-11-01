@@ -12,7 +12,7 @@ function about(){
         <div>This is about page</div>
         <a href="/index-code.html">index-code</a>
         <br></br>
-        <a href="/about/myweb">MY-web</a>
+        <a href="/testapi">MY-API</a>
         </div>
     )
 }
