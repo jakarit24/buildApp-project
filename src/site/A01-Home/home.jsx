@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 //import { Image } from "react-bootstrap";
 import Slick_Carousel_Top from "./slick-carousel";
+import Home_Content_2 from "./home-content-2";
+
+import "./home.css";
 
 export default function Home() {
-   
   useEffect(() => {
-    document.title = 'SecretDotCom : SDC | Main';
+    document.title = "SecretDotCom : SDC | Main";
   }, []);
 
   return (
@@ -34,7 +36,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="zone--home--3" class="zone--home--3 zone-content-page">
+      <div id="zone--home--3" class="zone--home--3 zone-content-page mb-40px">
         <div class="container--content">
           <div class="content--1">
             <div class="box-Slick_Carousel_Top">
@@ -42,14 +44,23 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="zone--home--4" class="zone--home--4 zone-content-page mb-40px">
         <div class="container--content">
-          <div class="content--2">
-            <h1>content</h1>
+          <div class="box--Home_Content_2">
+          <Home_Content_2></Home_Content_2>
+          </div>
+        </div>
+      </div>
 
-
+      <div id="zone--home--5" class="zone--home--5 zone-content-page">
+        <div class="container--content">
+        <div class="box--Home_Content_3">
+          CCC
           </div>
         </div>
       </div>
     </div>
   );
-};
+}

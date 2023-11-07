@@ -1,0 +1,64 @@
+/*all-app*/
+/*note
+sm >576; md>768; lg >992; xl >1200;
+*/
+
+
+.zone-z3 .box-z3 {  
+    background-color: #C8CCD0;
+    background-color: #D1E6FA;
+}
+.zone-z3 .box-z3 .card-z3{
+    padding: 8px 16px;
+}
+.zone-z3 .box-z3{
+    border-radius: 20px;
+}
+.zone-z3 .box-z3 .card-content-img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.box-slick-carousel{
+    max-width: 370px;
+}
+.box-slick-carousel .card-content {
+    background-color: #C8CCD0;
+}
+
+/*sm*/
+@media (min-width: 576px) {
+}
+/*md*/
+@media (min-width: 768px) {
+}
+@media (max-width: 1200px) {
+}
+/*lg*/
+@media (min-width: 992px) {
+}
+/*xl*/
+@media (min-width: 1200px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 520px) {
+}
+
+/*sm*/
+@media (min-width: 576px) {
+}
+/*md*/
+@media (min-width: 768px) {
+}
+@media (max-width: 1200px) {
+}
+/*lg*/
+@media (min-width: 992px) {
+}
+/*xl*/
+@media (min-width: 1200px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 520px) {
+}

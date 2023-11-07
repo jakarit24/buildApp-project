@@ -1,9 +1,17 @@
+import React, { useState, useEffect } from "react";
+// CSS
 import logo from "./logo.svg";
 import "./style_css/App.css";
 import "./style_css/master_style.css";
 import "./style_css/margin_style.css";
 import "./style_css/padding_style.css";
 import "./style_css/add_on_style.css";
+import "./style_css/animation _style.css";
+// Toole
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 
 import {
@@ -15,7 +23,7 @@ import {
 // page
 import Header from "./site/A01-Master/header";
 import Footer from "./site/A01-Master/footer";
-
+//
 import Home from "./site/A01-Home/home";
 import About from "./site/A01-About/about";
 import Contact from "./site/A01-Page-Content/contact";
@@ -23,12 +31,19 @@ import Error from "./site/Error/error";
 import Login from "./site/A01-User/login";
 import TestApi from "./site/A01-Page-Content/test_api";
 
-import { useState } from "react";
-function App() {
+
+//import { Image } from "react-bootstrap";
+
+
+export default function App() {
   const [count, setCount] = useState(0);
 
   let activeClassName = "btn-navlink nav-active";
   let navLinkClassName = "btn-navlink";
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     //* Master Page *//
@@ -130,9 +145,7 @@ function App() {
       </footer>
     </BrowserRouter>
   );
-}
-
-export default App;
+};
 
 /*
 function App() {
