@@ -196,6 +196,29 @@ a:hover {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
+.btn.btn-sdc {
+  background: #5E5DF0;
+  background-color: #0a6bff;
+  border-radius: 10px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  padding: 8px;
+  text-decoration: none;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  max-width: 270px;
+}
+.max-w80p{
+  max-width: 80%;
+}
 /*sm*/
 @media (min-width: 576px) {
 }

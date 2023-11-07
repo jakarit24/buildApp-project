@@ -43,9 +43,9 @@ export const Home_Slick_Carousel_Top = () => {
       title: "Title 4",
       detail: "Lorem ipsum dolor sit amet, consectur dolori",
       description: "Lorem ipsum dolor sit amet, consectur dolori",
-      img: "/image/image-mock/blue370x270.png",
-      img_desktop: "/image/image-mock/blue370x270.png",
-      img_mobile: "/image/image-mock/blue370x270.png",
+      img: "/image/image-mock/green370x270.png",
+      img_desktop: "/image/image-mock/green370x270.png",
+      img_mobile: "/image/image-mock/green370x270.png",
       link: "#",
     },
   ];
@@ -106,28 +106,3 @@ export const Home_Slick_Carousel_Top = () => {
   );
 };
 export default Home_Slick_Carousel_Top;
-
-/*
-<div class="box-slick-carousel item pt-8px pb-8px">
-        <a href="#">
-          <div class="card-content">
-            <div class="box-img">
-              <img
-                srcSet="/images/logo-1.5x.png 767w, /images/logo-2x.png 992w"
-                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                alt="image 1"
-                className="card-content-img"
-                src=""
-              />
-            </div>
-          </div>
-          <div class="box-text">
-            <div class="card-content-type">Text</div>
-            <div class="card-content-title" title="title"><h4>Name Text</h4></div>
-            <div class="card-content-detail">Text</div>
-            <div class="card-content-name">Text</div>
-            <div class="card-readmore d-flex justify-content-between align-middle">readmore</div>
-          </div>
-        </a>
-      </div>
-      */
