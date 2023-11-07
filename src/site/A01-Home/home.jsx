@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 //import { Image } from "react-bootstrap";
 import Slick_Carousel_Top from "./slick-carousel";
 
-/*src={img_banner_top} */
-function Home() {
+export default function Home() {
    
+  useEffect(() => {
+    document.title = 'SecretDotCom : SDC | Main';
+  }, []);
 
   return (
     <div class="app--project">
@@ -50,6 +52,4 @@ function Home() {
       </div>
     </div>
   );
-}
-
-export default Home;
+};

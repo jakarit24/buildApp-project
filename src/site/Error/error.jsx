@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-function Error(){
+
+export default function Error() {
+
+    useEffect(() => {
+        document.title = 'SecretDotCom : SDC | Error';
+      }, []);
 
     const clickBtn = () => {
         alert("This is Home page !");
@@ -31,7 +36,5 @@ function Error(){
         </div>
         
       </div>
-    )
-}
-
-export default Error
+    );
+};

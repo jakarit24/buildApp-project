@@ -28,6 +28,9 @@ a:hover {
 .zone--header .tab-header a:hover {
   font-weight: bold;
 }
+.zone--header .tab-header a.ch24-app-project {
+  padding-right: 8px;
+}
 
 .tab-meun.tab-btn {
   height: auto;

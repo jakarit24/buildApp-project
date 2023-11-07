@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-function about(){
+export default function LoginPage() {
+
+    useEffect(() => {
+        document.title = 'SecretDotCom : SDC | About';
+      }, []);
+
     return(
         <div>This is about page
         <br></br>
@@ -18,5 +23,3 @@ function about(){
         </div>
     )
 }
-
-export default about
