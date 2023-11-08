@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 //import { Image } from "react-bootstrap";
 import Slick_Carousel_Top from "./slick-carousel";
+import Home_Content_1 from "./home-content-1";
+import Home_Content_2 from "./home-content-2";
 
-/*src={img_banner_top} */
-function Home() {
-   
+import "./home.css";
+
+export default function Home() {
+  useEffect(() => {
+    document.title = "SecretDotCom : SDC | Main";
+  }, []);
 
   return (
     <div class="app--project">
@@ -18,7 +23,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div id="zone--home--2" class="zone--home--2 zone-banner-page">
+      <div id="zone--home--2" class="zone--home--2 zone-banner-page mb-40px">
         <div class="container--banner max-height-480px">
           <div class="box-banner">
             <div class="box-banner-image">
@@ -32,7 +37,7 @@ function Home() {
         </div>
       </div>
 
-      <div id="zone--home--3" class="zone--home--3 zone-content-page">
+      <div id="zone--home--3" class="zone--home--3 zone-content-page mb-40px">
         <div class="container--content">
           <div class="content--1">
             <div class="box-Slick_Carousel_Top">
@@ -40,16 +45,49 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="zone--home--6" class="zone--home--6 zone-content-page pt-40px pb-40px">
         <div class="container--content">
-          <div class="content--2">
-            <h1>content</h1>
-
-
+        <div class="box--Home_Content_1">
+        <Home_Content_1></Home_Content_1>
           </div>
         </div>
       </div>
+
+      <div id="zone--home--4" class="zone--home--4 zone-content-page mb-40px mt-40px">
+        <div class="container--content">
+          <div class="box--Home_Content_2">
+          <Home_Content_2></Home_Content_2>
+          </div>
+        </div>
+      </div>
+
+      <div id="zone--home--5" class="zone--home--5 zone-content-page mb-40px">
+        <div class="container--content">
+        <div class="box--Home_Content_3 z-anime">
+          Anime
+          </div>
+        </div>
+      </div>
+
+      <div id="zone--home--7" class="zone--home--7 zone-content-page mb-40px">
+        <div class="container--content">
+        <div class="box--Home_Content_7 z-game">
+          Game
+          </div>
+        </div>
+      </div>
+
+      <div id="zone--home--8" class="zone--home--8 zone-content-page mb-40px">
+        <div class="container--content">
+        <div class="box--Home_Content_8 z-code">
+          COde
+          </div>
+        </div>
+      </div>
+
+
     </div>
   );
 }
-
-export default Home;

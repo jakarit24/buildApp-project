@@ -1,0 +1,79 @@
+/*all-app*/
+/*note
+sm >576; md>768; lg >992; xl >1200;
+*/
+.cursor-pointer {
+  cursor: pointer;
+}
+label.box-text {
+  min-width: 170px;
+}
+.page--login .btn-login {
+  background: #5E5DF0;
+  background-color: #0a6bff;
+  border-radius: 10px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  padding: 8px;
+  text-decoration: none;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  max-width: 270px;
+}
+.page--login .btn-login:hover {
+  background-color: #065dd8;
+}
+.page--login .left-login {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+}
+.page--login .right-banner .card-banner .box-img{
+  text-align: center;
+}
+/*sm*/
+@media (min-width: 576px) {
+}
+/*md*/
+@media (min-width: 768px) {
+}
+@media (max-width: 1200px) {
+}
+/*lg*/
+@media (min-width: 992px) {
+}
+/*xl*/
+@media (min-width: 1200px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 520px) {
+}
+
+/*sm*/
+@media (min-width: 576px) {
+}
+/*md*/
+@media (min-width: 768px) {
+}
+@media (max-width: 1200px) {
+}
+/*lg*/
+@media (min-width: 992px) {
+}
+/*xl*/
+@media (min-width: 1200px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 520px) {
+}

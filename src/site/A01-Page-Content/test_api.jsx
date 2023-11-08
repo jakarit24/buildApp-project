@@ -13,7 +13,7 @@ export default function Content_Page_Api() {
   const sliderSettings = {
     // removes default buttons
     arrows: false,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     infinite: false,
   };

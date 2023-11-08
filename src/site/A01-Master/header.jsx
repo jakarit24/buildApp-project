@@ -8,13 +8,14 @@ function Header() {
         <div class="tab-header d-flex justify-content-between align-middle">
           <div class="pull-left d-none d-md-block">
             <a class="charon" href="#">
-              Charon
+            SecretDotCom : SDC
             </a>
           </div>
           <div class="text-right hide-mobile">
-            <a href="/ch24-app-project" class="ch24-app-project">
-              Ch24-App-Project
+            <a href="https://github.com/jakarit24/buildApp-project" class="ch24-app-project">
+              GitHub-Project
             </a>
+            <a href="/login" class="goto-login">Login</a>
           </div>
         </div>
       </div>

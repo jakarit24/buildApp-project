@@ -3,10 +3,11 @@ import { useState } from "react";
 
 import DateTime from "../Toole/dateTime";
 import Toole_Calendar from "../Toole/calendar";
+
 function Footer() {
   return (
     <div id="footer-master">
-      <div class="zone--footer1 bg-F5F5F5">
+      <div class="zone--footer1 bg-F5F5F5 pt-40px pb-40px">
         <div class="container--content">
           <div class="box-footer1">
             {/*--------footer1----------*/}
@@ -17,7 +18,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div class="zone--footer2 bg-000000">
+      <div class="zone--footer2 pt-8px pb-8px bg-000000">
         <div class="container--content">
           <div class="box-footer2 text-right pt-8px pb-8px">
             {/*--------footer2----------*/}

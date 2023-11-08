@@ -13,9 +13,9 @@ export const Home_Slick_Carousel_Top = () => {
       title: "Title 1",
       detail: "Lorem ipsum dolor sit amet, consectur dolori",
       description: "Lorem ipsum dolor sit amet, consectur dolori",
-      img: "/image/home/image/ST360x270-(1).png",
-      img_desktop: "/image/home/image/ST360x270-(1).png",
-      img_mobile: "/image/home/image/ST360x270-(1).png",
+      img: "/image/image-mock/blue370x270.png",
+      img_desktop: "/image/image-mock/blue370x270.png",
+      img_mobile: "/image/image-mock/blue370x270.png",
       link: "#",
     },
     {
@@ -23,9 +23,9 @@ export const Home_Slick_Carousel_Top = () => {
       title: "Title 2",
       detail: "Lorem ipsum dolor sit amet, consectur dolori",
       description: "Lorem ipsum dolor sit amet, consectur dolori",
-      img: "/image/home/image/ST360x270-(2).png",
-      img_desktop: "/image/home/image/ST360x270-(2).png",
-      img_mobile: "/image/home/image/ST360x270-(2).png",
+      img: "/image/image-mock/blue370x270.png",
+      img_desktop: "/image/image-mock/blue370x270.png",
+      img_mobile: "/image/image-mock/blue370x270.png",
       link: "#",
     },
     {
@@ -33,9 +33,19 @@ export const Home_Slick_Carousel_Top = () => {
       title: "Title 3",
       detail: "Lorem ipsum dolor sit amet, consectur dolori",
       description: "Lorem ipsum dolor sit amet, consectur dolori",
-      img: "/image/home/image/ST360x270-(3).png",
-      img_desktop: "/image/home/image/ST360x270-(3).png",
-      img_mobile: "/image/home/image/ST360x270-(3).png",
+      img: "/image/image-mock/blue370x270.png",
+      img_desktop: "/image/image-mock/blue370x270.png",
+      img_mobile: "/image/image-mock/blue370x270.png",
+      link: "#",
+    },
+    {
+      name: "Name 4",
+      title: "Title 4",
+      detail: "Lorem ipsum dolor sit amet, consectur dolori",
+      description: "Lorem ipsum dolor sit amet, consectur dolori",
+      img: "/image/image-mock/green370x270.png",
+      img_desktop: "/image/image-mock/green370x270.png",
+      img_mobile: "/image/image-mock/green370x270.png",
       link: "#",
     },
   ];
@@ -76,17 +86,18 @@ export const Home_Slick_Carousel_Top = () => {
                     />
                   )}
                 </div>
-              </div>
-              <div class="box-text">
-                <div class="card-content-name">{card.name}</div>
+                <div class="box-text">
+                <div class="card-content-name"><h3 class="ellipsis1">{card.name}</h3></div>
                 <div class="card-content-title" title="title">
                   <h4>{card.title}</h4>
                 </div>
-                <div class="card-content-description">{card.description}</div>
+                <div class="card-content-description ellipsis1">{card.description}</div>
                 <div class="card-readmore d-flex justify-content-between align-middle">
                   readmore
                 </div>
               </div>
+              </div>
+              
             </a>
           </div>
         ))}
@@ -95,28 +106,3 @@ export const Home_Slick_Carousel_Top = () => {
   );
 };
 export default Home_Slick_Carousel_Top;
-
-/*
-<div class="box-slick-carousel item pt-8px pb-8px">
-        <a href="#">
-          <div class="card-content">
-            <div class="box-img">
-              <img
-                srcSet="/images/logo-1.5x.png 767w, /images/logo-2x.png 992w"
-                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                alt="image 1"
-                className="card-content-img"
-                src=""
-              />
-            </div>
-          </div>
-          <div class="box-text">
-            <div class="card-content-type">Text</div>
-            <div class="card-content-title" title="title"><h4>Name Text</h4></div>
-            <div class="card-content-detail">Text</div>
-            <div class="card-content-name">Text</div>
-            <div class="card-readmore d-flex justify-content-between align-middle">readmore</div>
-          </div>
-        </a>
-      </div>
-      */

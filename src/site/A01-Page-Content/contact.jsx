@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-function contact(){
+
+export default function Contact(){
+
+    useEffect(() => {
+        document.title = 'SecretDotCom : SDC | Contact';
+      }, []);
+
     return(
         <div>This is contact page</div>
-    )
-}
-
-export default contact
+    );
+};
