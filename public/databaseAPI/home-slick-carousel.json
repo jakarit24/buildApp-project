@@ -1,0 +1,32 @@
+[
+	{
+        "name": "Name 1",
+        "title": "Title 1",
+        "detail": "Lorem ipsum dolor sit amet, consectur dolori",
+        "description": "Lorem ipsum dolor sit amet, consectur dolori",
+        "img": "/image/home/image/ST360x270-(1).png",
+        "img_desktop": "/image/home/image/ST360x270-(1).png",
+        "img_mobile": "/image/home/image/ST360x270-(1).png",
+        "link": "#"
+	},
+	{
+        "name": "Name 2",
+        "title": "Title 2",
+        "detail": "Lorem ipsum dolor sit amet, consectur dolori",
+        "description": "Lorem ipsum dolor sit amet, consectur dolori",
+        "img": "/image/home/image/ST360x270-(2).png",
+        "img_desktop": "/image/home/image/ST360x270-(2).png",
+        "img_mobile": "/image/home/image/ST360x270-(2).png",
+        "link": "#"
+	},
+	{
+        "name": "Name 3",
+        "title": "Title 3",
+        "detail": "Lorem ipsum dolor sit amet, consectur dolori",
+        "description": "Lorem ipsum dolor sit amet, consectur dolori",
+        "img": "/image/home/image/ST360x270-(3).png",
+        "img_desktop": "/image/home/image/ST360x270-(3).png",
+        "img_mobile": "/image/home/image/ST360x270-(3).png",
+        "link": "#"
+	}
+]

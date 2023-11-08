@@ -13,13 +13,14 @@ import {
 } from "react-bootstrap/esm/ThemeProvider";
 
 // page
-import Header from "./site/Master/header";
-import Footer from "./site/Master/footer";
+import Header from "./site/A01-Master/header";
+import Footer from "./site/A01-Master/footer";
 
-import Home from "./site/home";
-import About from "./site/about";
-import Contact from "./site/contact";
-import Error from "./site/error";
+import Home from "./site/A01-Home/home";
+import About from "./site/A01-About/about";
+import Contact from "./site/A01-Page-Content/contact";
+import Error from "./site/Error/error";   
+import TestApi from "./site/A01-Page-Content/test_api";
 
 import { useState } from "react";
 function App() {
@@ -118,6 +119,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="*" element={<Error />}></Route>
+        <Route path="/testapi" element={<TestApi />}></Route>
       </Routes>
 
       {/*--------footer----------*/}

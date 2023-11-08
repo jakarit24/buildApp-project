@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-import DateTime from "../toole/dateTime";
-import Toole_Calendar from "../toole/calendar";
+import DateTime from "../Toole/dateTime";
+import Toole_Calendar from "../Toole/calendar";
 function Footer() {
   return (
     <div id="footer-master">
