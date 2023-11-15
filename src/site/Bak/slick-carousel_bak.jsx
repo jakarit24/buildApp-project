@@ -1,16 +1,54 @@
 /*slick-carousel*/
 /* {`${item.price} USD`} */
 /* {card.img == "" ? ('') : ('')} */
-//import React from "react";
-import React, { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
-import axios from "axios";
-
 import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const Home_Slick_Carousel_Top = () => {
+  const carousel_item = [
+    {
+      name: "Name 1",
+      title: "Title 1",
+      detail: "Lorem ipsum dolor sit amet, consectur dolori",
+      description: "Lorem ipsum dolor sit amet, consectur dolori",
+      img: "/image/image-mock/blue370x270.png",
+      img_desktop: "/image/image-mock/blue370x270.png",
+      img_mobile: "/image/image-mock/blue370x270.png",
+      link: "#",
+    },
+    {
+      name: "Name 2",
+      title: "Title 2",
+      detail: "Lorem ipsum dolor sit amet, consectur dolori",
+      description: "Lorem ipsum dolor sit amet, consectur dolori",
+      img: "/image/image-mock/blue370x270.png",
+      img_desktop: "/image/image-mock/blue370x270.png",
+      img_mobile: "/image/image-mock/blue370x270.png",
+      link: "#",
+    },
+    {
+      name: "Name 3",
+      title: "Title 3",
+      detail: "Lorem ipsum dolor sit amet, consectur dolori",
+      description: "Lorem ipsum dolor sit amet, consectur dolori",
+      img: "/image/image-mock/blue370x270.png",
+      img_desktop: "/image/image-mock/blue370x270.png",
+      img_mobile: "/image/image-mock/blue370x270.png",
+      link: "#",
+    },
+    {
+      name: "Name 4",
+      title: "Title 4",
+      detail: "Lorem ipsum dolor sit amet, consectur dolori",
+      description: "Lorem ipsum dolor sit amet, consectur dolori",
+      img: "/image/image-mock/green370x270.png",
+      img_desktop: "/image/image-mock/green370x270.png",
+      img_mobile: "/image/image-mock/green370x270.png",
+      link: "#",
+    },
+  ];
 
   const img_default = "/image/image-mock/360x320.png";
 
@@ -22,27 +60,10 @@ export const Home_Slick_Carousel_Top = () => {
     infinite: false,
   };
 
-  const [data, setData] = useState([]);
-  const url_api =
-    "https://raw.githubusercontent.com/jakarit24/buildApp-project/main/public/databaseAPI/home-slick-carousel.json";
-
-    getApi();
-    async function getApi() {
-    try {
-      const response = await axios.get(url_api);
-      //console.log(response);
-      setData(response.data);
-      return response;
-  
-    } catch (error) {
-      console.error('Error Call Api');
-    }
-  }
-
   return (
     <div class="zone-slick-carousel">
       <Slider {...sliderSettings}>
-        {data.map((card, index) => (
+        {carousel_item.map((card, index) => (
           <div class="box-slick-carousel item pt-8px pb-8px" item-index={index}>
             <a href={card.link}>
               <div class="card-content">

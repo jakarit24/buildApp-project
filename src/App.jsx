@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 // CSS
 import logo from "./logo.svg";
-import "./style_css/App.css";
-import "./style_css/master_style.css";
-import "./style_css/margin_style.css";
-import "./style_css/padding_style.css";
+import "./style_css/1 - settings/App.css";
+import "./style_css/1 - settings/master_style.css";
+import "./style_css/1 - settings/margin_style.css";
+import "./style_css/1 - settings/padding_style.css";
 import "./style_css/add_on_style.css";
 import "./style_css/animation _style.css";
 // Toole

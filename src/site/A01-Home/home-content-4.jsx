@@ -6,6 +6,24 @@ import $ from "jquery";
 
 export default function Home_Content_4() {
 
+
+  const [data, setData] = useState([]);
+  const url_api =
+    "https://raw.githubusercontent.com/jakarit24/buildApp-project/main/public/databaseAPI/home-slick-carousel.json";
+
+    getApi();
+    async function getApi() {
+    try {
+      const response = await axios.get(url_api);
+      //console.log(response);
+      setData(response.data);
+      return response;
+  
+    } catch (error) {
+      console.error('Error Call Api');
+    }
+  }
+
   return (
     <div class="zone-z4">
       <div className={`box-anime`} id="box-1">
