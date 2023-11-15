@@ -2,56 +2,110 @@
 /*note
 sm >576; md>768; lg >992; xl >1200;
 */
-#zone--home--6{
-    background-color: #000;
+#zone--home--6 {
+  background-color: #000;
 }
 .zone-z1 .box-content.z-left {
-    background-color: #33CC00;
-    background-color: #99CCFF;
-    background: linear-gradient(0deg, #99CCFF 30%, #fff);
+  background-color: #33cc00;
+  background-color: #99ccff;
+  background: linear-gradient(0deg, #99ccff 30%, #fff);
 }
-.zone-z1 .box-content.z-right{
-    background-color: #FF9900;
-    background-color: #FF9966;
-    background: linear-gradient(0deg, #FF9966 30%, #fff);
+.zone-z1 .box-content.z-right {
+  background-color: #ff9900;
+  background-color: #ff9966;
+  background: linear-gradient(0deg, #ff9966 30%, #fff);
 }
-.zone-z1 .box-content.z-left,.zone-z1 .box-content.z-right {
-    padding: 24px;
-    border-radius: 40px;
-    text-align: center;
-    text-align: -webkit-center;
+.zone-z1 .box-content.z-left,
+.zone-z1 .box-content.z-right {
+  padding: 24px;
+  border-radius: 40px;
+  text-align: center;
+  text-align: -webkit-center;
 }
-.zone-z1 .box-content.z-right{
-    background-color: #FF9900;
-    background-color: #FF9966;
-    
+.zone-z1 .box-content.z-right {
+  background-color: #ff9900;
+  background-color: #ff9966;
 }
 .btn.btn-sdc.bgff9900 {
-    background-color: #FF6633;
-    box-shadow: #FF6600 0 10px 20px -10px;
+  background-color: #ff6633;
+  box-shadow: #ff6600 0 10px 20px -10px;
 }
 
-
-.zone-z3 .box-z3 {  
-    background-color: #C8CCD0;
-    background-color: #D1E6FA;
+.zone-z3 .box-z3 {
+  background-color: #c8ccd0;
+  background-color: #d1e6fa;
 }
-.zone-z3 .box-z3 .card-z3{
-    padding: 8px 16px;
+.zone-z3 .box-z3 .card-z3 {
+  padding: 8px 16px;
 }
-.zone-z3 .box-z3{
-    border-radius: 20px;
+.zone-z3 .box-z3 {
+  border-radius: 20px;
 }
 .zone-z3 .box-z3 .card-content-img {
-    border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 
-.box-slick-carousel{
-    max-width: 370px;
+.box-slick-carousel {
+  max-width: 370px;
 }
 .box-slick-carousel .card-content {
-    background-color: #C8CCD0;
+  background-color: #c8ccd0;
 }
+.zone-z4 .box-anime {
+  max-width: 20%;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 24px;
+  margin: 0 8px;
+}
+.zone-z4 {
+  max-width: calc((100% / 12) * 10);
+  width: 100%;
+  margin: auto;
+  display: inline-flex;
+  justify-content: center;
+}
+.zone-z4 .box-anime.show {
+  max-width: 30%;
+  background-color: #d3d3d3;
+}
+.zone-z4 .box-anime .card-title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.zone-z4 .box-anime .card-image.box-circle {
+  border: solid 3px #ffd400;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  top: 48px;
+  box-shadow: 1px 2px 20px 0 rgba(35, 19, 18, 0.2);
+}
+.zone-z4 .box-anime.show .card-image.box-circle {
+  width: 150px;
+  height: 150px;
+  .card-des.hide {
+    display: none;
+  }
+}
+.zone-z4 .box-anime .card-image.box-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: unset;
+  border-radius: 3px 3px 3px 3px;
+  border-radius: 50%;
+}
+.zone-z4 .box-anime .card-des.hide {
+  display: none;
+}
+.zone-z4 .box-anime.active .card-des {
+  display: block;
+}
+
 
 /*sm*/
 @media (min-width: 576px) {

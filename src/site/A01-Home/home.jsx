@@ -3,7 +3,9 @@ import React, { useState, useEffect } from "react";
 import Slick_Carousel_Top from "./slick-carousel";
 import Home_Content_1 from "./home-content-1";
 import Home_Content_2 from "./home-content-2";
-
+import Home_Content_4 from "./home-content-4";
+//import Home_Content_5 from "../A01-Page-Content/test_class";
+import test888  from "../A01-Page-Content/test_class.js";
 import "./home.css";
 
 export default function Home() {
@@ -66,7 +68,7 @@ export default function Home() {
       <div id="zone--home--5" class="zone--home--5 zone-content-page mb-40px">
         <div class="container--content">
         <div class="box--Home_Content_3 z-anime">
-          Anime
+        <Home_Content_4></Home_Content_4>
           </div>
         </div>
       </div>
@@ -74,15 +76,15 @@ export default function Home() {
       <div id="zone--home--7" class="zone--home--7 zone-content-page mb-40px">
         <div class="container--content">
         <div class="box--Home_Content_7 z-game">
-          Game
+          Home_Content_5
           </div>
         </div>
       </div>
 
       <div id="zone--home--8" class="zone--home--8 zone-content-page mb-40px">
         <div class="container--content">
-        <div class="box--Home_Content_8 z-code">
-          COde
+        <div class="box--Home_Content_8 z-code" id="888">
+        <test888></test888>
           </div>
         </div>
       </div>

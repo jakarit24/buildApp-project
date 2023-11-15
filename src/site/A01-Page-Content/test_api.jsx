@@ -54,21 +54,6 @@ export default function Content_Page_Api() {
   }
 
   return (
-    /*<div class="container--content">
-     <pre>{JSON.stringify(data, null, 2)}</pre>
-    </div>*/
-
-   /* <div class="zone-slick-carousel">
-      <ul>
-        {data.map((item, index) => (
-          <li key={index}>
-            <div class="box-slick-carousel item pt-8px pb-8px">
-              img: {item.img}
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>*/
     <div class="zone-slick-carousel">
       <Slider {...sliderSettings}>
         {data.map((card, index) => (

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './style_css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './jquery/js_01_home.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
