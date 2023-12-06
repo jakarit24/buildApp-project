@@ -29,6 +29,12 @@ import About from "./site/A01-About/about";
 import Contact from "./site/A01-Page-Content/contact";
 import Error from "./site/Error/error";   
 import Login from "./site/A01-User/login";
+import Register from "./site/A01-User/register";
+import Register_TY from "./site/A01-User/thank_you";
+import UserPage from "./site/A01-User/user";
+
+//import test_login from "./site/A01-User/test_login";
+import LoginForm from './site/A01-User/test_login'
 import TestApi from "./site/A01-Page-Content/test_api";
 
 
@@ -136,7 +142,14 @@ export default function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="*" element={<Error />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="/register/thank_you" element={<Register_TY />}></Route>
+        <Route path="/user" element={<UserPage />}></Route>        
         <Route path="/testapi" element={<TestApi />}></Route>
+        <Route path="/test_login" element={<LoginForm />}></Route>          
+        
+        
+        
       </Routes>
 
       {/*--------footer----------*/}

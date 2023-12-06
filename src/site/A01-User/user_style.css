@@ -40,6 +40,36 @@ label.box-text {
 .page--login .right-banner .card-banner .box-img{
   text-align: center;
 }
+
+.btn-ty {
+  background: #5E5DF0;
+  background-color: #0a6bff;
+  border-radius: 10px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  padding: 8px;
+  text-decoration: none;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  max-width: 270px;
+}
+.btn-ty:hover {
+  background-color: #065dd8;
+}
+
+.zone-error-message{
+  color:crimson;
+  font-size: 14px;
+}
+
 /*sm*/
 @media (min-width: 576px) {
 }

@@ -20,6 +20,11 @@ export default function LoginPage() {
         <a href="/testapi">MY-API</a>
         <br></br>
         <a href="/login">Login</a>
+        <br></br>
+        <a href="/register">register</a>
+        <br></br>
+        <a href="/test_login">register</a>
+        <br></br>
         </div>
     )
 }
