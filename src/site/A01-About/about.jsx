@@ -23,8 +23,12 @@ export default function LoginPage() {
         <br></br>
         <a href="/register">register</a>
         <br></br>
-        <a href="/test_login">register</a>
+        <a href="/test_login">test_login</a>
         <br></br>
+
+        <a href="/user_form">user_form</a>
+        <br></br>
+        
         </div>
     )
 }

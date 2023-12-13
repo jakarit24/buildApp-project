@@ -35,6 +35,8 @@ import UserPage from "./site/A01-User/user";
 
 //import test_login from "./site/A01-User/test_login";
 import LoginForm from './site/A01-User/test_login'
+import UserForm from './site/A01-User/test_user'
+
 import TestApi from "./site/A01-Page-Content/test_api";
 
 
@@ -147,7 +149,7 @@ export default function App() {
         <Route path="/user" element={<UserPage />}></Route>        
         <Route path="/testapi" element={<TestApi />}></Route>
         <Route path="/test_login" element={<LoginForm />}></Route>          
-        
+        <Route path="/user_form" element={<UserForm />}></Route> 
         
         
       </Routes>

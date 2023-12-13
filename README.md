@@ -12,3 +12,11 @@ add aos-animate
 
 - 7/11/2023 : 4:14PM
 add content at home page
+
+- 6/12/2023 : 5:00PM
+add firebase
+add login, register
+
+- 13/12/2023 : 5:00PM
+add firebase real time 
+update user page

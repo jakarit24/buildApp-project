@@ -22,14 +22,13 @@ export default function UserPage() {
   const navigate = useNavigate();
   const [user, setUser] = useState([]);
   const displayNameRef = useRef();
-  const photoURLRef = useRef();
 
   const [firstName, setfirstName] = useState();
   const [lastName, setlastName] = useState();
 
   const ref_zone_profile = useRef(null);
   const ref_zone_detail = useRef(null);
-
+ 
   const [buttonMenuStatus, setButtonMenuStatus] = useState("profile");
 
   useEffect(() => {
@@ -54,21 +53,38 @@ export default function UserPage() {
     });
   }, []);
 
-  // update แก้ไข โปรไฟล์
-  const handleProfile = async (e) => {
+  const handleProfile = (event) => {
+    ref_zone_profile.current.classList.remove('d-none');
+  };
+  const handleDetail = (event) => {
+    ref_zone_detail.current.classList.remove('d-none');
+  };
+  const handleEdit1 = (event) => {
+   
+  };
+  const handleEdit2 = (event) => {
+    
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const displayName = displayNameRef.current.value;
-    //const photoURLRef = photoURLRef.current.value;
     console.log("displayNameRef: " + displayName);
-    //console.log("photoURLRef: " + photoURLRef);
+
+    /*try {
+      await updateProfile(auth, displayNameRef);
+      console.log("gg");
+    } catch (error) {
+      console.log(error);
+    }*/
+
     updateProfile(auth.currentUser, {
       displayName: displayName,
       photoURL: "https://example.com/jane-q-user/profile.jpg",
     })
       .then(() => {
         console.log("update !!!");
-        setButtonMenuStatus("profile")
         navigate("/user");
         // ...
       })
@@ -78,13 +94,11 @@ export default function UserPage() {
         console.log("update error");
       });
   };
-
-  //Logout
   const handleLogout = async (e) => {
     signOut(auth)
       .then(() => {
         console.log("Logout !!!");
-        alert(" ออกจากระบบเรียบร้อยแล้ว ");
+        alert(" ออกจากระบบเรียบร้อยแล้ว ")
         navigate("/");
       })
       .catch((error) => {
@@ -92,7 +106,6 @@ export default function UserPage() {
       });
   };
 
-    // update แก้ไข ข้อมูลส่วนตัว
   const handleEdit = async (e) => {
     // Push Function
     console.log("Push Function !!!");
@@ -128,80 +141,41 @@ export default function UserPage() {
       });
   }
   return (
-    <div className="container--content page--login mt-40px  mb-40px page--user">
+    <div className="container--content page--login mt-40px  mb-40px page-user">
       <div className="row">
         <div className="col-6 col-md-6 zone-left">
           <div className="mb-16px">
-            <button
-              id="id-btn-profile"
-              className={cm(
-                "btn-menu btn-profile",
-                buttonMenuStatus === "profile" && "active"
-              )}
-              onClick={() => setButtonMenuStatus("profile")}
-              type="profile"
-            >
+            <button id="id-btn-profile"  className={cm("btn-menu btn-profile", buttonMenuStatus === "profile" && "active")}
+        onClick={() => setButtonMenuStatus("profile")} type="profile" >
               โปรไฟล์
             </button>
           </div>
           <div className="mb-16px">
-            <button
-              id="id-btn-detail"
-              className={cm(
-                "btn-menu btn-detail",
-                buttonMenuStatus === "detail" && "active"
-              )}
-              onClick={() => setButtonMenuStatus("detaiProfile")}
-              type="detail"
-            >
+            <button id="id-btn-detail" className={cm("btn-menu btn-detail", buttonMenuStatus === "detail" && "active")}
+        onClick={() => setButtonMenuStatus("detail")} type="detail" >
               ข้อมูลส่วนตัว
             </button>
           </div>
           <div className="mb-16px">
-            <button
-              id="id-btn-edit-1"
-              className={cm(
-                "btn-menu btn-edit1",
-                buttonMenuStatus === "detaiProfile" && "active"
-              )}
-              onClick={() => setButtonMenuStatus("detaiProfile")}
-              type="detaiProfile"
-            >
+            <button id="id-btn-edit-1" className={cm("btn-menu btn-edit1", buttonMenuStatus === "edit1" && "active")}
+        onClick={() => setButtonMenuStatus("edit1")} type="edit1">
               แก้ไข โปรไฟล์
             </button>
           </div>
           <div className="mb-16px">
-            <button
-              id="id-btn-edit-2"
-              className={cm(
-                "btn-menu btn-edit2",
-                buttonMenuStatus === "editDetail" && "active"
-              )}
-              onClick={() => setButtonMenuStatus("editDetail")}
-              type="editDetail"
-            >
+            <button id="id-btn-edit-2" className={cm("btn-menu btn-edit2", buttonMenuStatus === "edit2" && "active")}
+        onClick={() => setButtonMenuStatus("edit2")} type="edit1">
               แก้ไข ข้อมูลส่วนตัว
             </button>
           </div>
           <div className="mb-16px">
-            <button
-              id="id-btn-logout"
-              className="btn-logout"
-              type="logout"
-              onClick={handleLogout}
-            >
+            <button id="id-btn-logout" className="btn-logout" type="logout" onClick={handleLogout}>
               logout
             </button>
           </div>
         </div>
         <div className="col-6 col-md-6 zone-right">
-          <div
-            ref={ref_zone_profile}
-            className={cm(
-              "zone-profile zone-hide",
-              buttonMenuStatus === "profile" && "active"
-            )}
-          >
+          <div ref={ref_zone_profile} className={cm("zone-profile zone-hide", buttonMenuStatus === "profile" && "active")}>
             <div class="card-profile">
               <div class="card-profile-image mb-16px">
                 <img
@@ -220,13 +194,7 @@ export default function UserPage() {
               </div>
             </div>
           </div>
-          <div
-            ref={ref_zone_detail}
-            className={cm(
-              "zone-profile zone-hide",
-              buttonMenuStatus === "detail" && "active"
-            )}
-          >
+          <div ref={ref_zone_detail} className={cm("zone-profile zone-hide", buttonMenuStatus === "detail" && "active")}>
             <div className="row">
               <div className="col-6 col-md-6">DisplayName</div>
               <div className="col-6 col-md-6">{user.displayName}</div>
@@ -240,79 +208,6 @@ export default function UserPage() {
               <div className="col-6 col-md-6">{user.email}</div>
             </div>
           </div>
-          <div
-            className={cm(
-              "zone-profile zone-hide",
-              buttonMenuStatus === "detaiProfile" && "active"
-            )}
-          >
-            <form onSubmit={handleProfile} className="form-container">
-              <div class="col-12 zone-displayName mb-16px">
-                <label className="box-text" htmlFor="displayName">
-                  displayName
-                </label>
-                <input
-                  ref={displayNameRef}
-                  type="displayName"
-                  name="displayName"
-                  required
-                />
-              </div>
-              <div class="col-12 zone-displayName mb-16px d-none">
-                <label className="box-text" htmlFor="photoURLRef">
-                photo URL
-                </label>
-                <input
-                  ref={photoURLRef}
-                  type="photoURLRef"
-                  name="photoURLRef"
-                  
-                />
-              </div>
-              
-              <div class="col-12 mb-16px">
-              <button id="id-btn" className="btn-update" type="submit">
-                update displayName
-              </button>
-              </div>
-            </form>
-          </div>
-          <div
-            className={cm(
-              "zone-profile zone-hide",
-              buttonMenuStatus === "editDetail" && "active"
-            )}
-          >
-            <form onSubmit={handleEdit} className="form-container">
-              <div class="col-12 zone-firstName mb-16px">
-                <label className="box-text" htmlFor="firstName">
-                  firstName
-                </label>
-                <input
-                  value={firstName}
-                  type="firstName"
-                  name="firstName"
-                  onChange={(e) => setfirstName(e.target.value)}
-                />
-              </div>
-              <div class="col-12 zone-lastName mb-16px">
-                <label className="box-text" htmlFor="lastName">
-                  lastName
-                </label>
-                <input
-                  value={lastName}
-                  type="lastName"
-                  name="lastName"
-                  onChange={(e) => setlastName(e.target.value)}
-                />
-              </div>
-              <div class="col-12 mb-16px">
-                <button id="id-btn" className="btn-update" type="submit">
-                  update DB
-                </button>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
       ---------------- detail ----------------
@@ -325,6 +220,49 @@ export default function UserPage() {
       <br></br>
       <br></br>
       <br></br>
+      <form onSubmit={handleSubmit} className="form-container">
+        <div class="col-12 zone-displayName mb-16px">
+          <label className="box-text" htmlFor="displayName">
+            displayName
+          </label>
+          <input
+            ref={displayNameRef}
+            type="displayName"
+            name="displayName"
+            required
+          />
+        </div>
+        <button id="id-btn" className="btn-login" type="submit">
+          update displayName
+        </button>
+      </form>
+      <form onSubmit={handleEdit} className="form-container">
+        <div class="col-12 zone-firstName mb-16px">
+          <label className="box-text" htmlFor="firstName">
+            firstName
+          </label>
+          <input
+            value={firstName}
+            type="firstName"
+            name="firstName"
+            onChange={(e) => setfirstName(e.target.value)}
+          />
+        </div>
+        <div class="col-12 zone-lastName mb-16px">
+          <label className="box-text" htmlFor="lastName">
+            lastName
+          </label>
+          <input
+            value={lastName}
+            type="lastName"
+            name="lastName"
+            onChange={(e) => setlastName(e.target.value)}
+          />
+        </div>
+        <button id="id-btn" className="btn-db" type="submit">
+          update DB
+        </button>
+      </form>
       <form onSubmit={handleLogout} className="form-container">
         <div class="col-12 zone-displayName mb-16px">
           <label className="box-text" htmlFor="displayName">

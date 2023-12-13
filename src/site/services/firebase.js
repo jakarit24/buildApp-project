@@ -6,16 +6,10 @@ import { initializeApp } from "firebase/app";
 //เรียกใช้ service firebase/auth
 import { getAuth } from "firebase/auth"
 
+import { getDatabase } from "firebase/database";
+
 // Your web app's Firebase configuration
 import firebaseConfig from "./firebase_config";
-/*const firebaseConfig = {
-  apiKey: "AIzaSyDauaAOpt60ZQfFInexhytNOOMfPp_Ph1Y",
-  authDomain: "app-project-ae493.firebaseapp.com",
-  projectId: "app-project-ae493",
-  storageBucket: "app-project-ae493.appspot.com",
-  messagingSenderId: "758662978319",
-  appId: "1:758662978319:web:c2ef2741d35434da89bc7a"
-};*/
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -24,3 +18,4 @@ export default app
 
 //ใช้ service auth ผ่าน named import
 export const auth = getAuth(app)
+export const db = getDatabase(app);

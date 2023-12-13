@@ -8,7 +8,7 @@ sm >576; md>768; lg >992; xl >1200;
 label.box-text {
   min-width: 170px;
 }
-.page--login .btn-login {
+.page--login .btn-login,.page--user .btn-update {
   background: #5E5DF0;
   background-color: #0a6bff;
   border-radius: 10px;
@@ -28,7 +28,7 @@ label.box-text {
   touch-action: manipulation;
   max-width: 270px;
 }
-.page--login .btn-login:hover {
+.page--login .btn-login:hover, .page--user .btn-update:hover {
   background-color: #065dd8;
 }
 .page--login .left-login {
@@ -69,6 +69,18 @@ label.box-text {
   color:crimson;
   font-size: 14px;
 }
+.page--user .btn-menu{
+  background-color: #dbe0e6;
+}
+.page--user .btn-menu.active{
+  background-color: #065dd8;
+}
+.page--user .zone-profile.zone-hide{
+ display: none;
+}
+.page--user .zone-profile.zone-hide.active{
+  display: block !important;
+ }
 
 /*sm*/
 @media (min-width: 576px) {
